@@ -1,0 +1,29 @@
+GET http://localhost:8000/subscribers
+
+###
+GET http://localhost:8000/subscribers/63bdaf01b3c37ede80776b0a
+
+
+###
+
+POST http://localhost:8000/subscribers
+Content-Type: application/json
+
+{
+    "name":"Amazing person",
+    "subscribedToChannel":"wev Dev Simplified"
+}
+
+###
+
+DELETE http://localhost:8000/subscribers/63bdb3be91d378d015e16910
+
+###
+
+PATCH  http://localhost:8000/subscribers/63bdb3be91d378d015e16910
+Content-Type: application/json
+
+{
+    "name":"Aranya Dana",
+    "subscribedToChannel":"wev Dev Simplified"
+}
